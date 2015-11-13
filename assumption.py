@@ -64,8 +64,22 @@ class Assumption(object):
 
   def printself(self):
     print self.name
+    print "    # Games Fixed: {}".format(len(self.getGamesFixed()))
     for c in self.conditions:
-      print c
+      print "    " + str(c)
+
+  def getConditions(self):
+    return self.conditions
+
+  def getGamesFixed(self):
+    games_fixed = set()
+    for c in self.conditions:
+      for game, val in c:
+        games_fixed.add(game)
+    return games_fixed
+
+  def getName(self):
+    return self.name
 
 if __name__ == '__main__':
   all_16s_win = Assumption(DATA + '/assumption1.txt')
