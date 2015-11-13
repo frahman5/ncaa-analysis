@@ -42,6 +42,14 @@ def condenseAssumptions(*assumptions):
   
   return open_brackets
 
+def putBracketsNumberInPerspective(num_brackets):
+    import math
+    below = int(math.floor(math.log(num_brackets, 2)))
+    above = int(math.ceil(math.log(num_brackets, 2)))
+    return "(2^{}) < {} < (2^{})".format(below, num_brackets, above)
+
+
 if __name__ == '__main__':
   import os
-  print howManyBrackets(*[Assumption(DATA + '/' + a_file) for a_file in os.listdir(DATA)])
+  nb = howManyBrackets(*[Assumption(DATA + '/' + a_file) for a_file in os.listdir(DATA))
+  print putBracketsNumberInPerspective(nb)
