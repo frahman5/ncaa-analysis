@@ -1,6 +1,6 @@
 # ncaa-analysis
 
-### NAMING CONVENTION FOR TEAMS
+### Naming Conventions for Teams
 
 Let the four brackets be called A, B, C, D. 
 
@@ -83,7 +83,7 @@ Game | Teams
 62   | (ABW, CDW)
 ------------------------------------------------------
 
-### BRACKET CONVENTIONS
+### Bracket Conventions
 Each bracket t is a length 63 tuple where t[x] is the index of the winner of the xth (zero-indexed) game of the NCAA tournament. 
 For example, t[47] = 0 indicates that D-5 won the 47th game of a tournament. 
 t[x] is either 0 or 1 for every x in between 0 and 62.
