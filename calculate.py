@@ -51,5 +51,5 @@ def putBracketsNumberInPerspective(num_brackets):
 
 if __name__ == '__main__':
   import os
-  nb = howManyBrackets(*[Assumption(DATA + '/' + a_file) for a_file in os.listdir(DATA))
+  nb = howManyBrackets(*[Assumption(DATA + '/' + a_file) for a_file in os.listdir(DATA)])
   print putBracketsNumberInPerspective(nb)
