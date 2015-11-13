@@ -1,0 +1,1 @@
+DATA = '/Users/faiyam/Development/ncaa-analysis/data'
