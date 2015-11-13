@@ -4,17 +4,17 @@
 
 Let the four brackets be called A, B, C, D. 
 
-Round of 64 through Elite 8:
+## Round of 64 through Elite 8:
 A-x-..-z is the winner of the games played between x-..-z in conference A. e.g A-1 is the 1 seed in conference A.
 A-1-16 is the winner of the game played between A-1 and A-16. A-1-16-8-9 is the winner of the games played between
 A-1-16 and A-8-9. etc...
 
-Final four on:
+## Final four on:
 AW = Winner of A Bracket. BW = Winner of B Bracket. CW = Winner of C Bracket. DW = Winner of D Bracket. 
 ABW = Winner between AW, BW. CDW = Winner between CW, DW. 
 W = Overall Winner. 
 
-The teams participating in each of the 63 games are as follows:
+## The teams participating in each of the 63 games are as follows:
 
 Game | Teams
 -----| -----
