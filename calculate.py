@@ -44,12 +44,31 @@ def condenseAssumptions(*assumptions):
 
 def putBracketsNumberInPerspective(num_brackets):
     import math
-    below = int(math.floor(math.log(num_brackets, 2)))
-    above = int(math.ceil(math.log(num_brackets, 2)))
+    below = int(math.floor( round(math.log(num_brackets, 2), 4)))
+    above = int(math.ceil(round(math.log(num_brackets, 2), 4)))
     return "(2^{}) < {} < (2^{})".format(below, num_brackets, above)
+
+def bracketsNumberWithMarginalUtility():
+    import os 
+    import math
+    from tabulate import tabulate
+
+    assumptions_txt = os.listdir(DATA)
+    count = 2 ** 63
+    table = []
+    for i in range(1, len(assumptions_txt) + 1):
+        assumptions_obj = [Assumption(DATA + '/' + a_file) for a_file in assumptions_txt[:i]]
+        nb = howManyBrackets(*assumptions_obj)
+        marginal_utility = round(math.log(float(count)/float(nb), 2), 2)
+        table.append([assumptions_obj[-1].getName(), "{} factors of 2".format(marginal_utility), putBracketsNumberInPerspective(nb)])
+        count = nb
+
+    print tabulate(table, headers = ["Assumption", "Marginal Utility", "Num Brackets to Fill"], numalign = "right", stralign="right")
+
 
 
 if __name__ == '__main__':
-  import os
-  nb = howManyBrackets(*[Assumption(DATA + '/' + a_file) for a_file in os.listdir(DATA)])
-  print putBracketsNumberInPerspective(nb)
+  # import os
+  # nb = howManyBrackets(*[Assumption(DATA + '/' + a_file) for a_file in os.listdir(DATA)])
+  # print putBracketsNumberInPerspective(nb)
+  bracketsNumberWithMarginalUtility()

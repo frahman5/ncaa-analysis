@@ -1,5 +1,5 @@
 # Name
-No more than two 13 seeds beat a 4 ssed
+No more than two 13 seeds beat a 4 seed
 # Conditions
 (3,0);(18,0);(33,0);(48,0)
 (3,1);(18,0);(33,0);(48,0)

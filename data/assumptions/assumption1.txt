@@ -1,5 +1,5 @@
 # Name
-Every 16 loses.
+Every 16 loses
 # Conditions
 (0,0);(15,0);(30,0);(45,0)
 # End
