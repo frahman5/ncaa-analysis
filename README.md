@@ -92,3 +92,6 @@ t[x] is either 0 or 1 for every x in between 0 and 62.
 ## Sample bracket
 sample = (0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 
           0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0)  
+
+### Resources
+[Bracket shortcuts](https://docs.google.com/document/d/1UEI7sEhOVnZ6_TQfF4erLanSGci7tHSFSETInzkeqkc/edit?ts=562d858a)
