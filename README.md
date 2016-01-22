@@ -95,3 +95,8 @@ sample = (0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0
 
 ### Resources
 [Bracket shortcuts](https://docs.google.com/document/d/1UEI7sEhOVnZ6_TQfF4erLanSGci7tHSFSETInzkeqkc/edit?ts=562d858a)
+
+## Usage
+1) Configure the DATA variable in CONFIG.py to be appropriate for your local machine
+2) Run
+python calculate.py

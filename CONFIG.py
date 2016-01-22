@@ -1,1 +1,1 @@
-DATA = '/Users/faiyam/Development/ncaa-analysis/data/assumptions'
+DATA = '/Users/faiyamrahman/Development/ncaa-analysis/data/assumptions'
